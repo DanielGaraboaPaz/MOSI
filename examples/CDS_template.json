@@ -1,0 +1,19 @@
+{
+    "service-id": "reanalysis-era5-pressure-levels",
+    "product-id": "reanalysis",
+    "date-min": "2019-01-01 00:00:00", 
+    "date-max": "2020-01-01 00:00:00",
+    "latitude-min": 42.0,
+    "latitude-max": 43.0, 
+    "longitude-min": -1.0, 
+    "longitude-max": 0.0,
+    "pressure_level": [
+        "1", "2", "3",
+        "5", "7", "10"],
+    "format":"netcdf",
+    "variable": [
+        "temperature"    
+    ],
+    "out-dir": "./TEMPERATURE/",
+    "out-name": "ibe.nc"
+}

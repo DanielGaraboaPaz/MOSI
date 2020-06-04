@@ -1,0 +1,19 @@
+{
+    "thredds": "http://mandeo.meteogalicia.es/thredds",
+    "service-id": "/fileServer/",
+    "product-id": "mohid_noiamuros/fmrc/files/{year}{month}{day}/MOHID_NoiaMuros_{year}{month}{day}_0000.nc4",
+    "date-min": "2019-10-26 00:00:00",
+    "date-max": "2019-10-28 00:00:00",
+    "horizontal-stride":1,
+    "depth-stride":1,
+    "variable": [
+        "salt",
+        "temp",
+        "u",
+        "v",
+        "w"
+    ],
+    "format":"netcdf",
+    "out-dir": "./VIGO/",
+    "out-name": "MOHID_Vigo_{year}{month}{day}_0000.nc4"
+}

@@ -5,7 +5,7 @@ setuptools.setup(
     version='0.1',
     author='Angel Daniel Garaboa Paz, Vicente Pérez Muñuzuri',
     author_email='angeldaniel.garaboa@usc.es',
-    packages=['MOSI', 'docs'],
+    packages=['MOSI'],
     license='GPLv3',
     url='https://github.com/DanielGaraboaPaz/MOSI',
     description='A python package for MetOcean data inquirer',

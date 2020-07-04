@@ -109,8 +109,7 @@ def split_request_on_time(request, freq):
     date_format = '%Y-%m-%d %H:%M:%S'
     _date_range = pd.date_range(start=request['date-min'],
                                 end=request['date-max'],
-                                freq=freq,
-                                closed='left')
+                                freq=freq)
     t = 0
     for date in range(0, len(_date_range)-1):
         request_time = {

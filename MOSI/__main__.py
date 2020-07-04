@@ -120,6 +120,7 @@ def split_request_on_time(request, freq):
             }
         requests.append(request_time)
         t += 1
+    print(request)
     return requests
 
 

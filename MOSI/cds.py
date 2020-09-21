@@ -85,6 +85,7 @@ def download(request):
     for n in range(0, attempts):
         print('-> Donwload Attempt >> ', n)
         out_nc_filename = request['out-dir'] + request['out-name'] + '.nc'
+        print('-> Path out filename >>', out_nc_filename)
         if os.path.isfile(out_nc_filename) is False:
             c.retrieve(*request_cds)
         else:

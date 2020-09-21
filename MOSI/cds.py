@@ -88,4 +88,5 @@ def download(request):
         if os.path.isfile(out_nc_filename) is False:
             c.retrieve(*request_cds)
         else:
+            print('-> This file exist. Continue with next one')
             break

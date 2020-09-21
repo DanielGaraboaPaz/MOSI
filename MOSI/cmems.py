@@ -59,7 +59,8 @@ def download(request):
     print('\n')
     for n in range(0, attempts):
         print('-> Donwload attempt >> ', n)
-        if os.path.isfile(request['out-name']) is False:
+        out_nc_filename = request['out-dir'] + request['out-name']
+        if os.path.isfile(out_nc_filename) is False:
             _ = os.system(motu_request)
         else:
             break

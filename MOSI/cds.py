@@ -68,7 +68,7 @@ def get_cds_request(request):
 
     request_cds = [request['service-id'],
                    inner_dict,
-                   request['out-dir'] + request['out-name'] + '.nc']
+                   request['out-dir'] + request['out-name']]
 
     return request_cds
 
@@ -84,7 +84,7 @@ def download(request):
     c = cdsapi.Client()
     for n in range(0, attempts):
         print('-> Donwload Attempt >> ', n)
-        out_nc_filename = request['out-dir'] + request['out-name'] + '.nc'
+        out_nc_filename = request['out-dir'] + request['out-name']
         print('-> Path out filename >>', out_nc_filename)
         if os.path.isfile(out_nc_filename) is False:
             c.retrieve(*request_cds)
